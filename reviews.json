@@ -1,0 +1,25 @@
+{
+  "reviews": [ {"professor": "Dr. Alice Smith", "subject": "Computer Science", "rating": 4, "review": "Dr. Smith is very knowledgeable and engaging. The course material was challenging but rewarding."},
+    {"professor": "Prof. John Doe", "subject": "Mathematics", "rating": 3, "review": "Prof. Doe's lectures were clear, but the grading seemed harsh. Some additional help sessions would be appreciated."},
+    {"professor": "Dr. Emily Johnson", "subject": "Physics", "rating": 5, "review": "Dr. Johnson is fantastic! Her passion for the subject is infectious, and she makes complex concepts easy to understand."},
+    {"professor": "Dr. Michael Brown", "subject": "Chemistry", "rating": 2, "review": "Dr. Brown's classes were often disorganized, and the lab sessions felt rushed. Needs to improve course structure."},
+    {"professor": "Prof. Sarah White", "subject": "Biology", "rating": 4, "review": "Prof. White is approachable and provides excellent feedback. The course was well-organized and the labs were interesting."},
+    {"professor": "Dr. David Lee", "subject": "History", "rating": 3, "review": "Dr. Lee's lectures were informative but could benefit from more interactive elements to engage students."},
+    {"professor": "Prof. Laura Green", "subject": "Economics", "rating": 5, "review": "Prof. Green is an outstanding instructor who makes economics relatable and fun. Highly recommend her class."},
+    {"professor": "Dr. James Harris", "subject": "Engineering", "rating": 4, "review": "Dr. Harris is very knowledgeable and provides real-world applications of engineering principles. Some assignments were quite challenging."},
+    {"professor": "Prof. Olivia Martinez", "subject": "Philosophy", "rating": 3, "review": "Prof. Martinez has an interesting approach but can be difficult to follow at times. More structured lectures would help."},
+    {"professor": "Dr. William Clark", "subject": "Statistics", "rating": 4, "review": "Dr. Clark is clear and concise. The course materials were well-organized, and he was always available for help."},
+    {"professor": "Prof. Sophia Lewis", "subject": "Literature", "rating": 5, "review": "Prof. Lewis is passionate about literature and creates a vibrant classroom environment. Her feedback on essays was invaluable."},
+    {"professor": "Dr. Benjamin Walker", "subject": "Art History", "rating": 3, "review": "Dr. Walker's lectures are informative but sometimes lack depth. More visual aids would enhance understanding."},
+    {"professor": "Prof. Ava Robinson", "subject": "Music Theory", "rating": 4, "review": "Prof. Robinson is engaging and makes music theory accessible. The assignments were relevant and practical."},
+    {"professor": "Dr. Daniel Scott", "subject": "Political Science", "rating": 2, "review": "Dr. Scott's lectures were often dry and unengaging. The course could benefit from more interactive discussions."},
+    {"professor": "Prof. Mia Adams", "subject": "Sociology", "rating": 5, "review": "Prof. Adams is fantastic! Her passion for sociology is evident and she fosters a great classroom environment for discussions."},
+    {"professor": "Dr. Jacob Nelson", "subject": "Engineering Design", "rating": 4, "review": "Dr. Nelson is practical and hands-on, but some of the projects could use clearer instructions."},
+    {"professor": "Prof. Isabella Carter", "subject": "Public Speaking", "rating": 4, "review": "Prof. Carter is very encouraging and provides excellent feedback. The course helped build confidence in public speaking."},
+    {"professor": "Dr. Lucas Turner", "subject": "Astronomy", "rating": 3, "review": "Dr. Turner is knowledgeable but the class often felt rushed. More time for questions and discussions would be helpful."},
+    {"professor": "Prof. Charlotte Collins", "subject": "Anthropology", "rating": 5, "review": "Prof. Collins is engaging and her enthusiasm for anthropology makes the course enjoyable. Highly recommend her class."},
+    {"professor": "Dr. Henry Mitchell", "subject": "Database Systems", "rating": 4, "review": "Dr. Mitchell's class is well-structured and he provides practical examples. The workload is manageable and relevant."},
+    {"professor": "Prof. Ella Walker", "subject": "Gender Studies", "rating": 4, "review": "Prof. Walker is knowledgeable and passionate. The course is thought-provoking and well-organized."},
+    {"professor": "Dr. Ryan Young", "subject": "Organic Chemistry", "rating": 2, "review": "Dr. Young's class was difficult to follow and the pacing was inconsistent. Additional support materials would be beneficial."}
+]
+}
