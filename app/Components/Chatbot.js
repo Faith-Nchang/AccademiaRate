@@ -2,13 +2,18 @@
 import Image from "next/image";
 import { Box, TextField, Typography, Stack, Button} from "@mui/material";
 import { useState } from "react";
+import Markdown from 'react-markdown';
+
 
 const Get_Recommendation = ({open}) =>{
-  const [messages, setMessages] = useState([{
-    role: "assistant",
-    content : "Hi! I am the rate my professor support assistant how can i help you today?"
+  const [messages, setMessages] = useState([
+    {
+        role: 'assistant',
+        content: "Hi! I'm the Rate my Professor support assistant. How may I help you today?",
+    },
+])
 
-  }])
+
   const [message, setMessage] = useState('')
 
   const sendMessage = async () => {
@@ -43,6 +48,7 @@ const Get_Recommendation = ({open}) =>{
             {...lastMessage, content: lastMessage.content + text},
           ]
         })
+        console.log(messages)
         return reader.read().then(processText)
       })
     })
@@ -91,8 +97,14 @@ const Get_Recommendation = ({open}) =>{
                   color="white"
                   borderRadius={16}
                   p={3}
+                  paddingLeft={6}
+
                 >
-                  {message.content}
+                  <Markdown>{message.content}</Markdown>
+                  <Typography mb={2}>
+
+                  </Typography>
+                 
                 </Box>
               </Box>
             ))}

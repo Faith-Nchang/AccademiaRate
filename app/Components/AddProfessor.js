@@ -1,17 +1,19 @@
 import { useState } from "react"
 import styles from '../page.module.css'
 
-const { Typography, TextField, Button, Box } = require("@mui/material")
+const { Typography, TextField, Button, Box, CircularProgress } = require("@mui/material")
 
 const AddProfessor = ({open} ) =>{
     const [inputUrl, setInputUrl] = useState(''); // For storing the URL input
     const [data, setData] = useState(null); // For storing the response data
     const [error, setError] = useState(null); // For storing any error that might occur
+    const [loading, setLoading] = useState(false);
  
     // to scrape the data to obtain information about the professor
     
   const handleScrape = async (e) => {
     e.preventDefault();
+    setLoading(true)
 
     try {
       const response = await fetch('/api/fetch-data', {
@@ -33,6 +35,8 @@ const AddProfessor = ({open} ) =>{
     } catch (error) {
       setError(error.message); // Store the error message in state
       setData(null); // Clear any previous data
+    } finally{
+      setLoading(false)
     }
   };
 
@@ -75,6 +79,13 @@ const AddProfessor = ({open} ) =>{
         <p><span className={styles.spanText}>Review: </span>{data.review}</p>
       </Box>
     )}
+
+    {loading && (
+  <Typography variant="h6" px={60} py={30}>
+    <CircularProgress />
+    <p>Scraping website</p>
+  </Typography>
+)}
 
     {/* Display the error */}
     {error && <p>Error: {error}</p>}
