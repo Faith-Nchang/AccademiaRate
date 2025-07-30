@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+### 🧠 Professor Recommendation RAG App
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A **Retrieval-Augmented Generation (RAG)** web application designed to help students find professor recommendations based on custom input criteria (e.g., teaching quality, difficulty, clarity).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 🚀 Key Features:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+* **Natural Language Processing (NLP)** is used to interpret and extract intent from student queries.
+* Integrates **vector search algorithms** with **Pinecone** to retrieve the most relevant professor profiles based on semantic similarity.
+* Allows users to **submit RateMyProfessor URLs**, which are then **scraped and embedded** as dense vectors into the Pinecone index.
+* Dynamically surfaces top-matching professors using **cosine similarity** over vectorized metadata and review content.
+* The app leverages **OpenAI's language models** to refine search results and generate explainable, human-like responses.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### 🧰 Stack:
 
-## Learn More
+* **Frontend:** React
+* **Backend:** Python 
+* **NLP & Embeddings:** OpenAI  + Pinecone text empeddings
+* **Vector Database:** Pinecone
+* **Scraping:** BeautifulSoup / Playwright
 
-To learn more about Next.js, take a look at the following resources:
+#### 📌 Impact:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This tool simplifies course planning by offering smart, personalized faculty recommendations. It also allows crowdsourced expansion of the database through user-submitted RateMyProfessor profiles, making the system scalable and community-driven.
