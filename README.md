@@ -18,7 +18,7 @@ A **Retrieval-Augmented Generation (RAG)** web application designed to help stud
 * **Backend:** Python 
 * **NLP & Embeddings:** OpenAI  + Pinecone text empeddings
 * **Vector Database:** Pinecone
-* **Scraping:** BeautifulSoup / Playwright
+* **Scraping:** cheerio
 
 #### 📌 Impact:
 
